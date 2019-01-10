@@ -63,7 +63,7 @@ if (COMMAND pybind11_add_module AND MSVC)
 else()
    set (BUILDING_PYTHON_IN_MSVC false)
 endif()
-
+add_definitions("-fPIC")
 if (DLIB_IN_PROJECT_BUILD)
 
    # Check if we are being built as part of a pybind11 module. 
